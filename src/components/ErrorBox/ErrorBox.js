@@ -5,18 +5,16 @@ const ErrorBox = ({ children }) => {
   return (
     <div className={styles.errorBox}>
       <h1>
-        <span className="fa fa-exclamation-triangle" />
+        <span className='fa fa-exclamation-triangle' />
         Error
       </h1>
-      <p>
-        {children}
-      </p>
+      <p>There is not such city!</p>
     </div>
   );
 };
 
-ErrorBox.propTypes = { 
-  children: PropTypes.string
+ErrorBox.propTypes = {
+  children: PropTypes.string,
 };
 
 export default ErrorBox;
